@@ -51,8 +51,10 @@ For Each ws In ThisWorkbook.Worksheets
             ws.Cells(1, 16).Value = "Ticker"
             ws.Cells(1, 17).Value = "Value"
             ws.Range("K:K").NumberFormat = "0.00%"
+            ws.Range("L:L").NumberFormat = "#,##.0"
             ws.Range("Q2").NumberFormat = "0.00%"
             ws.Range("Q3").NumberFormat = "0.00%"
+            ws.Range("Q4").NumberFormat = "#,##.0"
         ' analysing each stock one by one
         
     rcount = 2
